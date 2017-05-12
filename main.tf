@@ -4,8 +4,8 @@ data "template_file" "test" {
 
   vars {
     sample_var = "${var.sample_var}"
-    terraform_tfvars_found = "${terraform_tfvars_found}"
-  }
+    terraform_tfvars_found = "${var.terraform_tfvars_found}"
+  } 
 }
 
 resource "null_resource" "sleep" {
