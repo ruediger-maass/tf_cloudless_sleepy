@@ -9,3 +9,10 @@ variable "sleepy_time" {
   description = "How long our local-exec will take a nap."
   default     = 30
 }
+
+variable "terraform_tfvars_found" {
+  description = "Check if 'terraform.tfvars' overrides the value."
+  default     = 0
+}
+
+
