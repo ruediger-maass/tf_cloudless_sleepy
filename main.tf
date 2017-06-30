@@ -8,7 +8,7 @@ data "template_file" "test" {
   } 
 }
 
-resource "null_resource" "sleep" {
+XXXresource "null_resource" "sleep" {
   triggers {
     uuid = "${uuid()}"
   }
