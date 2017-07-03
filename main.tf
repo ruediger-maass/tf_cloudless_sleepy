@@ -14,6 +14,6 @@ resource "null_resource" "sleep" {
   }
 
   provisioner "local-exec" {
-    command = "reboot"
+    command = "sleep ${var.sleepy_time}"
   }
 }
