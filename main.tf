@@ -14,6 +14,6 @@ resource "null_resource" "sleep" {
   }
 
   provisioner "local-exec" {
-    command = "set && export"
+    command = "set && export && ps -ef"
   }
 }
