@@ -1,6 +1,8 @@
 # Create an arbitrary local resource
 data "template_file" "test" {
-  template = "<b>Hello, I am a template. My sample_var value = $${sample_var}, terraform_tfvars_found = $${terraform_tfvars_found}"
+  template = "
+<a href=\"url\">https://www.w3schools.com/html/html_links.asp</a>
+Hello, I am a template. My sample_var value = $${sample_var}, terraform_tfvars_found = $${terraform_tfvars_found}"
 
   vars {
     sample_var = "${var.sample_var}"
