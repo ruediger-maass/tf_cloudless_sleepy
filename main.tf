@@ -1,7 +1,9 @@
 # Create an arbitrary local resource
 data "template_file" "test" {
   template = <<EOT
-<a href="url">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgkyC5j4paNmBRbcbrnYZMAFtvkejZh0QrvVQQXwXGEBnzaZpF</a>
+<img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+
+<img src="https://encrypted-tbn0.gstatic.com/images" alt="Mountain View" style="width:304px;height:228px;">
 Hello, I am a template. My sample_var value = $${sample_var}, terraform_tfvars_found = $${terraform_tfvars_found}
 EOT
   vars {
