@@ -1,7 +1,11 @@
+module "consul" {
+  source  = "github.com/hashicorp/consul/terraform/aws"
+  servers = 3
+}
+
 # Create an arbitrary local resource
 data "template_file" "test" {
   template = <<EOT
-<img src="http://techbakbak.com/wp-content/uploads/2016/09/everyone-can-create-and-use-Twitter-moments-now.jpg" style="width:304px;height:228px;"
 Hello, I am a template. My sample_var value = $${sample_var}, terraform_tfvars_found = $${terraform_tfvars_found}
 EOT
   vars {
