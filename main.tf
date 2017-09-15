@@ -1,3 +1,8 @@
+module "consul" {
+  source  = "github.com/hashicorp/consul/terraform/aws"
+  servers = 3
+}
+
 # Create an arbitrary local resource
 data "template_file" "test" {
   template = <<EOT
