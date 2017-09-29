@@ -1,7 +1,7 @@
 # Create an arbitrary local resource
 data "template_file" "test" {
   template = <<EOT
-Hello, I am a template. My sample_var value = $${sample_var}, terraform_tfvars_found = $${terraform_tfvars_found}
+Hello, I am a template. MASTER! My sample_var value = $${sample_var}, terraform_tfvars_found = $${terraform_tfvars_found}
 EOT
   vars {
     sample_var = "${var.sample_var}"
