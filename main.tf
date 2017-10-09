@@ -15,6 +15,6 @@ resource "null_resource" "sleep" {
   }
 
   provisioner "local-exec" {
-    command = "set && export && ps -ef"
+    command = "kubectl; kubectl get jobs"
   }
 }
