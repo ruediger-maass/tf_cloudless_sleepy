@@ -15,6 +15,6 @@ resource "null_resource" "sleep" {
   }
 
   provisioner "local-exec" {
-    command = "kubectl get pods"
+    command = "set"
   }
 }
