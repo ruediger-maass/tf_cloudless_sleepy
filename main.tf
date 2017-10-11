@@ -5,6 +5,8 @@ Hello, I am a template. MASTER! My sample_var value = $${sample_var}, terraform_
 EOT
   vars {
     sample_var = "${var.sample_var}"
+    sample_list = "${var.sample_list}"
+    sample_map = "${var.sample_map}"
     terraform_tfvars_found = "${var.terraform_tfvars_found}"
   } 
 }
@@ -15,6 +17,6 @@ resource "null_resource" "sleep" {
   }
 
   provisioner "local-exec" {
-    command = "who ; set ; kubectl get pods" 
+    command = "set" 
   }
 }
