@@ -7,6 +7,6 @@ output "sample_list" {
 output "sample_map" {
   value = "${var.sample_map}"
 }
-ouput "terraform_tfvars_found" {
+output "terraform_tfvars_found" {
   value = "${var.terraform_tfvars_found}"
 }
