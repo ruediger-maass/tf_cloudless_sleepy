@@ -1,3 +1,12 @@
-output "rendered_template" {
-  value = "${data.template_file.test.rendered}"
+output "sample_var value" {
+  value = "${var.sample_var}"
+}
+output "sample_list" {
+  value = "${var.sample_list}"
+}
+output "sample_map" {
+  value = "${var.sample_map}"
+}
+ouput "terraform_tfvars_found" {
+  value = "${var.terraform_tfvars_found}"
 }
