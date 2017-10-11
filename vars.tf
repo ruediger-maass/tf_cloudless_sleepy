@@ -19,7 +19,7 @@ variable "sample_map" {
   type = "map"
   default = {
     last_name = "Doe"
-    first_nam = "John"
+    first_name = "John"
   }
 }
 
