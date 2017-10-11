@@ -15,4 +15,14 @@ variable "terraform_tfvars_found" {
   default     = 0
 }
 
+variable "sample_map" {
+  type = "map"
+  default = {
+    last_name = "Doe"
+    first_nam = "John"
+  }
+}
 
+variable "sample_list" {
+  default = ["sweet", "sour", "bitter"]
+}
