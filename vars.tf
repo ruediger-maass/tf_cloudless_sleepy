@@ -24,5 +24,6 @@ variable "sample_map" {
 }
 
 variable "sample_list" {
+  type = "list"
   default = ["sweet", "sour", "bitter"]
 }
