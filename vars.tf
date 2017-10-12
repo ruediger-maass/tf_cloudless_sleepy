@@ -1,6 +1,6 @@
 # Configure these variables
 
-variabl "sample_var" {
+variable "sample_var" {
   description = "A sample_var to pass to the template."
   default     = "hello"
 }
