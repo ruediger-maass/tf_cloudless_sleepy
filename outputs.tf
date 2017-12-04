@@ -1,3 +1,4 @@
-output "sample_var value" {
-  value = "${var.sample_var}"
+
+output "rendered_template" {
+  value = "${data.template_file.test.rendered}"
 }
