@@ -1,4 +1,4 @@
-# Create an arbitrary local resource
+
 data "template_file" "test" {
   template = "Hello, I am a template. My sample_var value = ${var.sample_var}. The sleep time is ${var.sleepy_time}"
 }
